@@ -1,0 +1,54 @@
+/* --- @include font($fw, $fs, $lh, $ls); --- */
+@mixin font($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+
+/* --- @include mobile; --- */
+@mixin mobile {
+  @media screen and (min-width: 480px) {
+    @content;
+    // width: 448px; // 418+15+15 with left and rigth
+  }
+}
+
+/* --- @include tablet; --- */
+@mixin tablet {
+  @media screen and (min-width: 768px) {
+    @content;
+    // width: 720px; // 690+15+15 with left and rigth
+  }
+}
+
+/* --- @include desktop; --- */
+@mixin desktop {
+  @media screen and (min-width: 1200px) {
+    @content;
+    // width: 1200px; // 1170+15+15 with left and rigth
+  }
+}
+
+/* --- @include retina; --- */
+@mixin retina {
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    @content;
+  }
+}
+
+
+  /* --- Цей медіа-запит застосується при ширині в'юпорту більше 400px mobile --- */
+  @media screen and (min-width: 480px) {
+
+  }
+
+  /* --- Цей медіа-запит застосується при ширині в'юпорту більше 768px tablet --- */
+  @media screen and (min-width: 768px) {
+
+  }
+
+  /* --- Цей медіа-запит застосується при ширині в'юпорту більше 1200px desktop --- */
+  @media screen and (min-width: 1200px) {
+    
+  }

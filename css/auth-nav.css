@@ -1,0 +1,47 @@
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+  justify-content: center;
+  align-items: baseline;
+}
+.auth-nav > li:not(:last-child) {
+  margin-right: 50px;
+}
+
+.auth-nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.envelope {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color var(--animate);
+}
+
+.mail-item {
+  fill: var(--title-text-color);
+  color: var(--title-text-color);
+  transition: color var(--animate);
+}
+.mail-item:hover, .mail-item:focus {
+  color: var(--hover-color);
+  fill: var(--hover-color);
+}
+
+.smartphone {
+  margin-right: 10px;
+  cursor: pointer;
+  transition: color var(--animate);
+}
+
+.phone-item {
+  fill: var(--title-text-color);
+  color: var(--title-text-color);
+  transition: color var(--animate);
+}
+.phone-item:hover, .phone-item:focus {
+  color: var(--hover-color);
+  fill: var(--hover-color);
+}/*# sourceMappingURL=auth-nav.css.map */

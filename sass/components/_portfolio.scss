@@ -1,0 +1,159 @@
+/* --- КНОПКИ В ПОРТФОЛІО --- */
+
+.portfolio {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.button__list {
+  @include flex-justify;
+  flex-wrap: nowrap;
+
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button__items {
+  height: 26px;
+  font-family: 'Roboto';
+  font-style: normal;
+  @include font(500, 16px, 1.63, 0.03em);
+
+  text-align: center;
+  color: var(--accent-color);
+
+  border-radius: 4px;
+  border-style: solid;
+  border-color: transparent;
+
+  cursor: pointer;
+  margin-right: 8px;
+  transition: background-color var(--animate), color var(--animate), box-shadow var(--animate);
+
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
+
+.button__items:hover,
+.button__items:focus {
+  background-color: var(--hover-color);
+  color: var(--pramyre-text-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+/* --- card-set --- */
+.cards-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin: auto;
+}
+
+.cards-set__items {
+  overflow: hidden;
+  width: 370px;
+  margin-top: 30px;
+  margin-left: 30px;
+
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+
+  transition: background-color var(--animate), border var(--animate), box-shadow var(--animate);
+
+  &:hover,
+  &:focus {
+    background-color: var(--pramyre-text-color);
+    border: 1px solid #eeeeee;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.cards-set__thumb {
+  position: relative;
+  overflow: hidden;
+
+  & > img {
+    overflow: hidden;
+  }
+}
+
+.cards-set > .two,
+.cards-set > .three {
+  margin-left: 30px;
+  margin-top: 0;
+}
+
+.cards-set > .one {
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.cards-set > .four {
+  margin-left: 0;
+}
+
+.cards-set > .seven {
+  margin-left: 0;
+}
+
+.cards-set__subtitle {
+  margin-top: 20px;
+  margin-right: 24px;
+  margin-bottom: 4px;
+  margin-left: 24px;
+
+  @include font(700, 18px, 2, 0.06em);
+  color: var(--accent-color);
+}
+
+.cards-set__text {
+  margin-right: 24px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+
+  @include font(null, 16px, 1.88, 0.03em);
+  color: var(--title-text-color);
+}
+
+
+/* --- ПОРТФОЛІО ВИПАДАЮЧЕ ВІКНО --- */
+
+.card-overlay-text {
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  @include font(400, 18px, 1.56, 0.03em);
+  text-decoration: none;
+  color: var(--pramyre-text-color);
+  background-color: rgba(33, 150, 243, 0.9);
+
+  transform: translateY(101%);
+  opacity: 1;
+  transition: transform 250ms var(--animate);
+}
+
+.cards-set__items:hover .card-overlay-text,
+.cards-set__items:focus .card-overlay-text {
+  transform: translateY(0);
+}

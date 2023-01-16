@@ -1,0 +1,18 @@
+/* --- @include flex-align; --- */
+@mixin flex-align {
+  display: flex;
+  align-items: center;
+}
+
+/* --- @include flex-align-justify; --- */
+@mixin flex-align-justify {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- @include flex-justify; --- */
+@mixin flex-justify {
+  display: flex;
+  justify-content: center;
+}

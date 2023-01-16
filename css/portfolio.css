@@ -1,0 +1,105 @@
+@charset "UTF-8";
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin: auto;
+}
+
+.card-items {
+  overflow: hidden;
+  width: 370px;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  transition: background-color var(--animate), border var(--animate), box-shadow var(--animate);
+}
+.card-items:hover, .card-items:focus {
+  background-color: var(--pramyre-text-color);
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.card-thumb {
+  position: relative;
+  overflow: hidden;
+}
+.card-thumb > img {
+  overflow: hidden;
+}
+
+.card-set > .two,
+.card-set > .three {
+  margin-left: 30px;
+  margin-top: 0;
+}
+
+.card-set > .one {
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.card-set > .four {
+  margin-left: 0;
+}
+
+.card-set > .seven {
+  margin-left: 0;
+}
+
+.name-card {
+  margin-top: 20px;
+  margin-right: 24px;
+  margin-bottom: 4px;
+  margin-left: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--accent-color);
+}
+
+.name-text {
+  margin-right: 24px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+}
+
+/* --- ПОРТФОЛІО ВИПАДАЮЧЕ ВІКНО --- */
+.card-overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-top: 63px;
+  padding-right: 24px;
+  padding-bottom: 63px;
+  padding-left: 24px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: var(--pramyre-text-color);
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  opacity: 1;
+  transition: transform 250ms var(--animate);
+}
+
+.card-items:hover .card-overlay-text,
+.card-items:focus .card-overlay-text {
+  transform: translateY(0);
+}/*# sourceMappingURL=portfolio.css.map */

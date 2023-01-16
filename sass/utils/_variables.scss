@@ -1,0 +1,17 @@
+/* var вставити вар функції (var(--))*/
+:root {
+  --pramyre-text-color: #ffffff;
+  --title-text-color: #757575;
+  --accent-color: #212121;
+  --hover-color: #2196f3;
+  --caption-color: #000000;
+  --moz-box-sizing: border-box;
+  --main-font: Roboto, Raleway, 'Gill Sans', sans-serif;
+  --animate: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+body {
+  font-family: var(--main-font);
+  background-color: var(--pramyre-text-color);
+  color: var(--title-text-color);
+}

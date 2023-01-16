@@ -1,0 +1,12 @@
+header {
+  margin: auto;
+  background-color: var(--pramyre-text-color);
+  border-bottom: 1px solid #ececec;
+}
+
+.page {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}/*# sourceMappingURL=page-header.css.map */

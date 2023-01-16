@@ -1,0 +1,288 @@
+footer {
+width: 100%;
+
+  background: #2f303a;
+
+
+  @media screen and (min-width: 1200px) {
+    max-width: 1600px;
+  }
+
+  & > .container {
+text-align: center;
+     margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: baseline;
+  }
+  }
+}
+
+.footer-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-company {
+  outline: 1px solid orange;
+  @media screen and (min-width: 480px) {
+margin-bottom: 60px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 20px;
+    margin-right: 70px;
+  }
+}
+
+.logo__footer {
+  display: inline-flex;
+
+  font-family: 'Raleway';
+  font-style: normal;
+
+  color: var(--hover-color);
+
+  @media screen and (min-width: 480px) {
+    @include font(700, 24px, 1.17, 0.03em);
+      text-align: center;
+      margin-bottom: 28px;
+  }
+ 
+  @media screen and (min-width: 1200px) {
+    @include font(700, 26px, 1.19, 0.03em);
+  }
+}
+
+.logo__studio {
+  color: var(--pramyre-text-color);
+}
+
+.about-company__address {
+  display: block;
+
+  font-family: 'Roboto';
+  font-style: normal;
+
+  color: var(--pramyre-text-color);
+
+  @media screen and (min-width: 480px) {
+    @include font(400, 14px, 1.14, 0.03em);
+text-align: center;
+
+  }
+   
+  @media screen and (min-width: 1200px) {
+    @include font(400, 14px, 1.71, 0.03em);
+  }
+ 
+}
+
+.about-company__mail {
+  display: block;
+  margin-top: 9px;
+  margin-bottom: 9px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+
+  color: rgba(255, 255, 255, 0.6);
+  @media screen and (min-width: 480px) {
+    @include font(400, 14px, 1.14, 0.03em);
+text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(400, 14px, 1.71, 0.03em);
+  }
+}
+
+.about-company__phone {
+  display: block;
+
+  font-family: 'Roboto';
+  font-style: normal;
+
+  color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (min-width: 480px) {
+    @include font(400, 14px, 1.14, 0.03em);
+text-align: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(400, 14px, 1.71, 0.03em);
+  }
+}
+
+/* --- FOOTER soc-link --- */
+.about-company__items {
+  margin-bottom: 20px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: var(--pramyre-text-color);
+text-align: center;
+
+
+}
+
+.studio-soc__link {
+  @include flex-align-justify;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+
+  /* прописуємо у % щоб займало весь контейнер */
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color var(--animate), filter var(--animate), color var(--animate);
+  &:hover,
+  &:focus {
+    background-color: var(--hover-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 50%;
+  }
+}
+
+.studio-soc__icons {
+  fill: var(--pramyre-text-color);
+}
+
+/* --- Підпишіться на розсилку v FOOTER --- */
+
+.about-company__subscribe {
+  @media screen and (min-width: 480px) {
+       margin-top: 60px;
+
+    font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-align: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
+  }
+
+.about-company__subscribe-form {
+
+
+  @media screen and (min-width: 1200px) {
+    @include flex-align-justify;
+
+    margin: 0;
+    padding: 0;
+  }
+
+}
+
+.about-company__text-items-subscribe {
+  margin-bottom: 20px;
+
+   font-family: 'Roboto';
+  font-style: normal;
+  @include font(700, 14px, 1.14, 0.03em);
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.about-company__email-user {
+  outline: 1px solid yellow;
+  
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px; 
+
+  border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: #2f303a;
+transition: border var(--animate);
+
+font-family: 'Roboto';
+font-style: normal;
+
+@include font(400, 16px, 1.25, 0.03em);
+color: rgba(255, 255, 255, 0.6);
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  height: 50px;
+  margin-bottom: 20px;
+     }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+  width: 358px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid #2196f3;
+    border-radius: 4px;
+    background-color: #2f303a;
+  }
+}
+
+.about-company__submit-items {
+  /* кнопка */
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0;
+
+  @media screen and (min-width: 480px) {
+    display: inline-block;
+  
+    padding-right: 28px;
+    padding-left: 31px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include flex-align;
+    text-align: center;
+    padding-right: 28px;
+    padding-left: 28px;
+    margin-left: 12px;
+  }
+}
+
+.about-company__submit-text {
+  font-family: 'Roboto';
+  font-style: normal;
+  @include font(700, 16px, 1.88, 0.06em);
+  color: #ffffff;
+}
+
+.about-company__icon-submit {
+  margin-left: 12px;
+
+  fill: #ffffff;
+  background-color: #2196f3;
+
+  @media screen and (min-width: 1200px){
+    margin-left: 10px;
+  }
+}
