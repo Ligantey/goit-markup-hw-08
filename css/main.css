@@ -530,6 +530,7 @@ header {
   background-position: center;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: #2f303a;
+  width: 100%;
 }
 @media screen and (min-width: 480px) {
   .hero {
@@ -537,8 +538,26 @@ header {
     padding-right: 60px;
     padding-top: 118px;
     padding-bottom: 118px;
-    width: 100%;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Header_img_tel_1x.jpg");
+  }
+}
+@media screen and (min-width: 480px) and (min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resoluion: 192dpi), screen and (min-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 480px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Header_img_tel_2x.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-left: 204px;
+    padding-right: 204px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Header _img_tab_1x.jpg");
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resoluion: 192dpi), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/Header _img_tab_2x.jpg");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -550,6 +569,11 @@ header {
     max-width: 1600px;
     max-height: 600px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/backgraund.jpg");
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resoluion: 192dpi), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../images/header_img_desk_2x.jpg");
   }
 }
 
