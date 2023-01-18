@@ -95,6 +95,16 @@ header {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    border: none;
+    color: #212121; 
+    background-color: #FFFFFF;
+    transition: color var(--animate);
+
+    .link:hover,
+.link:focus,
+.link.current {
+  fill: var(--hover-color);
+}
 }
 
 /* --- site-nav --- */
@@ -110,7 +120,11 @@ header {
 
 .site-nav a {
   color: var(--accent-color);
+
+  font-family: 'Roboto';
+font-style: normal;
   @include font(500, 14px, 1.14, 0.02em);
+ 
 }
 
 .site-nav > li {
@@ -173,7 +187,6 @@ header {
   @media screen and (min-width: 768px) {
 display: block;
 margin-top: 21px;
-margin-right: 0px;
 margin-left: auto;
   }
 
@@ -195,19 +208,32 @@ margin-left: auto;
 }
 
 .auth-nav__item {
-  color: var(--title-text-color);
-  @include font(500, 14px, 1.14, 0.02em); 
- 
-  
+font-family: 'Roboto';
+font-style: normal;
+color: var(--title-text-color);
+
+@media screen and (min-width: 768px) {
+  @include font(500, 12px, 1.17, 0.02em); 
+}
+
   @media screen and (min-width: 1200px) {
     @include flex-justify;
   align-items: baseline;
+
+  @include font(500, 14px, 1.14, 0.02em); 
   } 
 
 }
 
 .auth-nav__envelope {
-  margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
+
 }
 
 .auth-nav__mail {
@@ -232,5 +258,11 @@ margin-left: auto;
 }
 
 .auth-nav__smartphone {
-  margin-right: 10px;
+  @media screen and (min-width: 768px) {
+    margin-right: 8px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+  }
 }

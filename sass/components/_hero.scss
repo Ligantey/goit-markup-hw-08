@@ -1,72 +1,75 @@
 .hero {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: #2f303a;
   width: 100%;
-
-  @media screen and (min-width: 480px) {
-    padding-left: 60px;
+  padding-left: 60px;
     padding-right: 60px;
 padding-top: 118px;
 padding-bottom: 118px;
 
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+background-color: #2f303a;
+
 background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
 url('../../images/Header_img_tel_1x.jpg');
 
-@media (min-device-pixel-ratio: 2), (min-resoluion: 192dpi), (min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
   url('../../images/Header_img_tel_2x.jpg');
-}
   }
 
-  @media screen and (min-width: 768px) {
-    padding-left: 204px;
-    padding-right: 204px;
-padding-top: 118px;
-padding-bottom: 118px;
+//   @media screen and (min-width: 768px) {
+//     padding-left: 204px;
+//     padding-right: 204px;
+// padding-top: 118px;
+// padding-bottom: 118px;
 
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../../images/Header\ _img_tab_1x.jpg');
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//     url('../../images/Header\ _img_tab_1x.jpg');
 
-    @media (min-device-pixel-ratio: 2), (min-resoluion: 192dpi), (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../images/Header\ _img_tab_2x.jpg');
-    }
-  }
-  @media screen and (min-width: 1200px) {
-    padding-top: 200px;
-    padding-bottom: 200px;
-    padding-left: 15px;
-    padding-right: 15px;
+//     @media (min-device-pixel-ratio: 2), (min-resoluion: 192dpi), (min-resolution: 2dppx) {
+//       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//       url('../../images/Header\ _img_tab_2x.jpg');
+//     }
+//   }
 
-    max-width: 1600px;
-    max-height: 600px;
+//   @media screen and (min-width: 1200px) {
+//     padding-top: 200px;
+//     padding-bottom: 200px;
+//     padding-left: 15px;
+//     padding-right: 15px;
 
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-  url('../../images/backgraund.jpg');
+//     max-width: 1600px;
+//     max-height: 600px;
 
-  @media (min-device-pixel-ratio: 2), (min-resoluion: 192dpi), (min-resolution: 2dppx) {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../../images/header_img_desk_2x.jpg');
-  }
+//   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//   url('../../images/backgraund.jpg');
+
+//   @media (min-device-pixel-ratio: 2), (min-resoluion: 192dpi), (min-resolution: 2dppx) {
+//     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+//     url('../../images/header_img_desk_2x.jpg');
+//   }
+// }
+
 }
 
-
-}
 .hero__container {
   margin-left: auto;
   margin-right: auto;
 }
 
 .hero__title {
-  width: 696px;
+  width: 360px;
 
   font-family: 'Roboto';
   font-style: normal;
-  @include font(900, 44px, 1.36, 0.06em);
-  text-align: center;
+  @include font(900, 26px, 1.62, 0.06em);
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+
   text-transform: uppercase;
   color: var(--pramyre-text-color);
 
@@ -74,8 +77,17 @@ padding-bottom: 118px;
   margin-right: auto;
   align-items: center;
   text-align: center;
-}
 
+  @media screen and (min-width: 768px) {
+    width: 360px;
+    @include font(900, 26px, 1.62, 0.06em);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+    @include font(900, 44px, 1.36, 0.06em);
+  }
+}
 
 .hero__button {
   margin-top: 30px;
@@ -84,11 +96,29 @@ padding-bottom: 118px;
 }
 
 .button__name {
-  font-family: 'Roboto';
-  font-style: normal;
-
-  @include font(700, 16px, 1.88, 0.06em);
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 32px;
+  padding-left: 24px;
+
+  font-family: 'Roboto';
+  font-style: normal;
+  @include font(700, 16px, 1.88, 0.06em);
+color: #FFFFFF;
+
+  @media screen and (min-width: 768px){
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 24px;
+
+    @include font(700, 16px, 1.88, 0.06em);
+  }
+
+  @media screen and (min-width: 1200px)  {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 32px;
+
+    @include font(700, 16px, 1.88, 0.06em);
+  
+  }
 }

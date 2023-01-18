@@ -1,16 +1,23 @@
-footer {
+.footer {
 width: 100%;
 
   background: #2f303a;
+  text-align: center;
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    // display: flex;
+    // flex-wrap: wrap;
+    // align-items: flex-start;  
+    // justify-content: baseline;
+    
+  }
 
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
   }
 
   & > .container {
-text-align: center;
-     margin-left: auto;
+    margin-left: auto;
     margin-right: auto;
 
     padding-left: 15px;
@@ -18,25 +25,40 @@ text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
 
-    
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: baseline;
-  }
-  }
+    @media screen and (min-width: 768px) {
+ 
+    }
+  
+    @media screen and (min-width: 1200px) {
+      display: flex;
+      align-items: baseline;
+      }
+    }
 }
 
 .footer-container {
   margin-left: auto;
   margin-right: auto;
+          
+ 
 }
 
 .about-company {
   outline: 1px solid orange;
-  @media screen and (min-width: 480px) {
-margin-bottom: 60px;
-  }
+  margin-bottom: 60px;
 
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 232px;
+    height: auto;
+  margin-left: 76px;
+  margin-bottom: 60px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // align-items: center;  
+  // justify-content: center;
+  display: inline-block;
+  }
+ 
   @media screen and (min-width: 1200px) {
     margin-top: 20px;
     margin-right: 70px;
@@ -48,15 +70,12 @@ margin-bottom: 60px;
 
   font-family: 'Raleway';
   font-style: normal;
+  @include font(700, 24px, 1.17, 0.03em);
+      text-align: center;
+      margin-bottom: 28px;
 
   color: var(--hover-color);
 
-  @media screen and (min-width: 480px) {
-    @include font(700, 24px, 1.17, 0.03em);
-      text-align: center;
-      margin-bottom: 28px;
-  }
- 
   @media screen and (min-width: 1200px) {
     @include font(700, 26px, 1.19, 0.03em);
   }
@@ -66,24 +85,30 @@ margin-bottom: 60px;
   color: var(--pramyre-text-color);
 }
 
+.about-company__list {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: inline-block;
+  }
+}
+
 .about-company__address {
   display: block;
+  // margin-top: 28px;
 
   font-family: 'Roboto';
   font-style: normal;
-
+  @include font(400, 14px, 1.14, 0.03em);
+  text-align: center;
   color: var(--pramyre-text-color);
 
-  @media screen and (min-width: 480px) {
-    @include font(400, 14px, 1.14, 0.03em);
-text-align: center;
-
-  }
-   
-  @media screen and (min-width: 1200px) {
-    @include font(400, 14px, 1.71, 0.03em);
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: inline-block;
   }
  
+  @media screen and (min-width: 1200px) {
+    @include font(400, 14px, 1.71, 0.03em);
+    display: block;
+  }
 }
 
 .about-company__mail {
@@ -93,15 +118,18 @@ text-align: center;
 
   font-family: 'Roboto';
   font-style: normal;
+  @include font(400, 14px, 1.14, 0.03em);
+text-align: center;
 
   color: rgba(255, 255, 255, 0.6);
-  @media screen and (min-width: 480px) {
-    @include font(400, 14px, 1.14, 0.03em);
-text-align: center;
+  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: inline-block;
   }
 
   @media screen and (min-width: 1200px) {
     @include font(400, 14px, 1.71, 0.03em);
+    display: block;
   }
 }
 
@@ -110,20 +138,32 @@ text-align: center;
 
   font-family: 'Roboto';
   font-style: normal;
-
+  @include font(400, 14px, 1.14, 0.03em);
+  text-align: center;
   color: rgba(255, 255, 255, 0.6);
 
-  @media screen and (min-width: 480px) {
-    @include font(400, 14px, 1.14, 0.03em);
-text-align: center;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: inline-block;
   }
 
   @media screen and (min-width: 1200px) {
     @include font(400, 14px, 1.71, 0.03em);
+    display: block;
   }
 }
 
 /* --- FOOTER soc-link --- */
+.about-company__soc {
+  
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: inline-block;
+    // margin-right: 89px;
+    margin-left: 165px;
+      // width: 206px;
+  
+    }
+}
+
 .about-company__items {
   margin-bottom: 20px;
 
@@ -133,8 +173,6 @@ text-align: center;
   text-transform: uppercase;
   color: var(--pramyre-text-color);
 text-align: center;
-
-
 }
 
 .studio-soc__link {
@@ -165,16 +203,21 @@ text-align: center;
 /* --- Підпишіться на розсилку v FOOTER --- */
 
 .about-company__subscribe {
-  @media screen and (min-width: 480px) {
-       margin-top: 60px;
+  outline: 1px solid red; 
 
-    font-weight: 700;
+  margin-top: 60px;
+
+  font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 text-align: center;
 letter-spacing: 0.03em;
 text-transform: uppercase;
-  }
+
+@media screen and (min-width: 768px) {
+display: inline-block;
+
+}
 
   @media screen and (min-width: 1200px) {
     margin-left: auto;
@@ -204,11 +247,15 @@ text-transform: uppercase;
 }
 
 .about-company__email-user {
-  outline: 1px solid yellow;
-  
+  display: block;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px; 
+
+  width: 450px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
 filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -218,15 +265,14 @@ transition: border var(--animate);
 
 font-family: 'Roboto';
 font-style: normal;
+align-items: center;
 
 @include font(400, 16px, 1.25, 0.03em);
 color: rgba(255, 255, 255, 0.6);
 
-  @media screen and (min-width: 480px) {
-    width: 450px;
-  height: 50px;
-  margin-bottom: 20px;
-     }
+@media screen and (min-width: 768px) {
+  justify-content: center;
+}
 
   @media screen and (min-width: 1200px) {
     display: block;
@@ -272,6 +318,8 @@ color: rgba(255, 255, 255, 0.6);
 .about-company__submit-text {
   font-family: 'Roboto';
   font-style: normal;
+  align-items: center;
+text-align: center;
   @include font(700, 16px, 1.88, 0.06em);
   color: #ffffff;
 }
