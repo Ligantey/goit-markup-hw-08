@@ -71,8 +71,8 @@
 
     </header>
     <main>
-      <section class="hero hero__container">
-        <div class="container">
+      <section class="hero hero__overlay">
+        <div class="container  hero__container">
           <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
           <button
             type="button"
@@ -142,16 +142,26 @@
           <ul class="subject__img">
             <li class="subject__item">
               <picture>
-
-              <img src="./images/img1.jpg" alt="робочий_стіл" width="370" height="294" />
+               <source srcset="./images/img1.jpg 1x,
+                  ./images/img1_desk_2x.jpg 2x" media="(min-width: 1200px)">
+                <img src="./images/img1.jpg" alt="робочий_стіл" width="370" height="294" />
+            </picture>
               <p class="subject__link">Десктопні додатки</p>
             </li>
             <li class="subject__item">
+              <picture>
+                <source srcset="./images/img2.jpg 1x,
+                ./images/img2_desk_2x.jpg 2x" media="(min-width: 1200px)">
               <img src="./images/img2.jpg" alt="ноутбук" width="370" height="294" />
+            </picture>
               <p class="subject__link">Мобільні додатки</p>
             </li>
             <li class="subject__item">
+              <picture>
+                <source srcset="./images/img3.jpg 1x,
+                ./images/img3_desk_2x.jpg 2x" media="(min-width: 1200px)">
               <img src="./images/img3.jpg" alt="планшет" width="370" height="294" />
+            </picture>
               <p class="subject__link">Дизайнерські рішення</p>
             </li>
           </ul>
@@ -166,11 +176,14 @@
                 <div class="team__text">
                   <picture>
                     <source media="(min-width:1200px)"
-                    srcset="./images/img_product_designer.jpg, ./images/team_img_1desk_2x.jpg">
+                    srcset="./images/img_product_designer.jpg, 
+                    ./images/team_img_1desk_2x.jpg">
                     <source media="(min-width:768px)"
-                    srcset="./images/team_img_1tab_1x.jpg, ./images/team_img_1tab_2x.jpg">
+                    srcset="./images/team_img_1tab_1x.jpg, 
+                    ./images/team_img_1tab_2x.jpg">
                       <source media="(min-width:480px)"
-                    srcset="./images/team_img_1tel_1x.jpg, ./images/team_img_1tel_2x.jpg">
+                    srcset="./images/team_img_1tel_1x.jpg, 
+                    ./images/team_img_1tel_2x.jpg">
                   <img
                     src="./images/img_product_designer.jpg"
                     alt="фото_продакт_десіжн"
