@@ -79,11 +79,41 @@
   // background: var(--accent-bcg-color);
   margin-left: auto;
   margin-right: auto;
-
+  
   @media screen and (min-width: 1200px) {
       padding-top: 200px;
       padding-bottom: 280px;
   }
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+  url('../../images/Header_img_tel_1x.jpg');
+      @include retina {
+          background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+          url('../../images/Header_img_tel_2x.jpg');
+      }
+
+      @media screen and (min-width: 768px) {
+          background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+          url('../../images/Header_img_tab_1x.jpg');
+          @include retina {
+              background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+              url('../../images/Header_img_tab_2x.jpg');
+          }
+      }  
+      
+      @media screen and (min-width: 1200px) {
+          max-width: 1600px;
+          background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+          url('../../images/backgraund.jpg');
+          @include retina {
+              background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+              url('../../images/header_img_desk_2x.jpg');
+          }
+      }
 }
 
   .hero__container {
@@ -102,29 +132,35 @@
       margin-left: auto;
       margin-right: auto;
 
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
+      // background-repeat: no-repeat;
+      // background-position: center;
+      // background-size: cover;
 
-      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/Header_img_tel_1x.jpg');
-          @include retina {
-              background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/Header_img_tel_2x.jpg');
-          }
+      // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+      // url('../../images/Header_img_tel_1x.jpg');
+      //     @include retina {
+      //         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+      //         url('../../images/Header_img_tel_2x.jpg');
+      //     }
 
-          @media screen and (min-width: 768px) {
-              background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/Header_img_tab_1x.jpg');
-              @include retina {
-                  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/Header_img_tab_2x.jpg');
-              }
-          }  
+      //     @media screen and (min-width: 768px) {
+      //         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+      //         url('../../images/Header_img_tab_1x.jpg');
+      //         @include retina {
+      //             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+      //             url('../../images/Header_img_tab_2x.jpg');
+      //         }
+      //     }  
           
-          @media screen and (min-width: 1200px) {
-              max-width: 1600px;
-              background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/backgraund.jpg');
-              @include retina {
-                  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../../images/header_img_desk_2x.jpg');
-              }
-          }
+      //     @media screen and (min-width: 1200px) {
+      //         max-width: 1600px;
+      //         background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+      //         url('../../images/backgraund.jpg');
+      //         @include retina {
+      //             background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
+      //             url('../../images/header_img_desk_2x.jpg');
+      //         }
+      //     }
               
  }
     
