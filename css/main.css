@@ -345,6 +345,7 @@ image.png.icon-burger .link.current {
     flex-direction: column;
     margin-top: 21px;
     margin-left: auto;
+    align-items: flex-start;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -374,7 +375,6 @@ image.png.icon-burger .link.current {
     line-height: 1.17;
     letter-spacing: 0.02em;
     margin-left: 0;
-    align-items: flex-start;
   }
 }
 @media screen and (min-width: 1200px) {

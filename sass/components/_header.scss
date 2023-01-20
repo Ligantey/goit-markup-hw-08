@@ -190,7 +190,7 @@ image.png.icon-burger {
     flex-direction: column;
     margin-top: 21px;
     margin-left: auto;
-
+    align-items: flex-start;
   }
 
   @media screen and (min-width: 1200px) {
@@ -219,7 +219,7 @@ image.png.icon-burger {
   @media screen and (min-width: 768px) and (max-height: 1199px) {
     @include font(500, 12px, 1.17, 0.02em);
     margin-left: 0;
-    align-items: flex-start;
+   
   }
 
   @media screen and (min-width: 1200px) {
