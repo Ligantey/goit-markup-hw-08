@@ -59,9 +59,10 @@ margin-bottom: 0px;
       }
   }
 .about-company {
+  margin-top: 28px;
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
   display: inline-block;
-  margin-top: 28px;
   }
  
   @media screen and (min-width: 1200px) {
@@ -227,7 +228,8 @@ display: inline-block;
 
 .about-company__subscribe-form {
   @media screen and (min-width: 1200px) {
-    @include flex-align-justify;
+    @include flex-justify;
+    align-items: baseline;
     margin: 0;
     padding: 0;
   }

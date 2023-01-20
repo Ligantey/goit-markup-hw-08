@@ -235,7 +235,7 @@ header {
   margin-left: auto;
   margin-right: 15px;
   color: #212121;
-  border: 1px solid black;
+  border: none;
   background-color: #FFFFFF;
 }
 @media screen and (min-width: 768px) {
@@ -1160,10 +1160,12 @@ header {
   }
 }
 
+.about-company {
+  margin-top: 28px;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .about-company {
     display: inline-block;
-    margin-top: 28px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1360,8 +1362,8 @@ header {
 @media screen and (min-width: 1200px) {
   .about-company__subscribe-form {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: baseline;
     margin: 0;
     padding: 0;
   }
