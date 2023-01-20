@@ -201,9 +201,10 @@ image.png.icon-burger {
 }
 
 .auth-nav>li:not(:last-child) {
-  @media screen and (min-width: 768px) {
-    margin-bottom: 10px;
-  }
+
+  // @media screen and (min-width: 768px) {
+  //   margin-bottom: 10px;
+  // }
 
   @media screen and (min-width: 1200px) {
     margin-right: 50px;
@@ -222,7 +223,6 @@ image.png.icon-burger {
   @media screen and (min-width: 1200px) {
     @include flex-justify;
     align-items: baseline;
-
     @include font(500, 14px, 1.14, 0.02em);
   }
 

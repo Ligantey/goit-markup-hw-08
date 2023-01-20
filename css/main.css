@@ -356,11 +356,6 @@ image.png.icon-burger .link.current {
   }
 }
 
-@media screen and (min-width: 768px) {
-  .auth-nav > li:not(:last-child) {
-    margin-bottom: 10px;
-  }
-}
 @media screen and (min-width: 1200px) {
   .auth-nav > li:not(:last-child) {
     margin-right: 50px;
