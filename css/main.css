@@ -341,7 +341,8 @@ image.png.icon-burger .link.current {
 }
 @media screen and (min-width: 768px) {
   .auth-nav {
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin-top: 21px;
     margin-left: auto;
   }
