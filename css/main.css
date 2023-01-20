@@ -367,12 +367,14 @@ image.png.icon-burger .link.current {
   font-style: normal;
   color: var(--title-text-color);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-height: 1199px) {
   .auth-nav__item {
     font-weight: 500;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.02em;
+    margin-left: 0;
+    align-items: flex-start;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -421,7 +423,6 @@ image.png.icon-burger .link.current {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .auth-nav__smartphone {
-    margin-left: 0;
     margin-right: 8px;
   }
 }

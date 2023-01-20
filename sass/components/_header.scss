@@ -216,8 +216,10 @@ image.png.icon-burger {
   font-style: normal;
   color: var(--title-text-color);
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-height: 1199px) {
     @include font(500, 12px, 1.17, 0.02em);
+    margin-left: 0;
+    align-items: flex-start;
   }
 
   @media screen and (min-width: 1200px) {
@@ -262,7 +264,6 @@ image.png.icon-burger {
 
 .auth-nav__smartphone {
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    margin-left: 0;
     margin-right: 8px;
   }
 
