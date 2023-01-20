@@ -31,6 +31,16 @@
             <span class="logo__web">Web</span>
             <span>Studio</span>
           </a>
+          <!--- MOBILE MENU --->
+          <!-- <button type="button"
+           class="header___burger js-open-menu"
+          aria-expanded="false"> -->
+          <button type="button"
+           class="header___burger js-open-menu">
+          <svg width="40" height="40" class="icon-burger" aria-label="Меню для мобільного телефона">
+          <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+          </button>
           <ul class="site-nav">
             <li><a href="./index.html" class="site-nav__item link">Студія</a></li>
             <li><a href="Портфоліо" class="site-nav__item link current">Портфоліо</a></li>
@@ -59,7 +69,7 @@
     </header>
     <main>
       <section class="portfolio">
-        <div class="container">
+        <div class="container portfolio__container">
           <h1 class="visually-hidden"></h1>
           <ul class="button__list">
             <li>
@@ -117,7 +127,7 @@
           <ul class="cards-set">
             <li class="cards-set__items one">
               <div class="cards-set__thumb">
-                <img src="./images/tehnokryak.jpg" alt="люди" width="370" height="294" />
+                <img class="cards-set__img" src="./images/tehnokryak.jpg" alt="люди" width="370" height="294" />
                 <p class="card-overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -131,7 +141,7 @@
             </li>
             <li class="cards-set__items two">
               <div class="cards-set__thumb">
-                <img src="./images/new-orlean-vs.jpg" alt="баскетбол" width="370" height="294" />
+                <img class="cards-set__img" src="./images/new-orlean-vs.jpg" alt="баскетбол" width="370" height="294" />
                 <p class="card-overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -145,7 +155,7 @@
             </li>
             <li class="cards-set__items three">
               <div class="cards-set__thumb">
-                <img src="./images/seafood.jpg" alt="ресторан" width="370" height="294" />
+                <img class="cards-set__img"  src="./images/seafood.jpg" alt="ресторан" width="370" height="294" />
                 <p class="card-overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -159,7 +169,7 @@
             </li>
             <li class="cards-set__items four">
               <div class="cards-set__thumb">
-                <img src="./images/prime_marketing.jpg" alt="навушники" width="370" height="294" />
+                <img class="cards-set__img" src="./images/prime_marketing.jpg" alt="навушники" width="370" height="294" />
                 <p class="card-overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -173,7 +183,7 @@
             </li>
             <li class="cards-set__items five">
               <div class="cards-set__thumb">
-                <img src="./images/boxes.jpg" alt="коробки" width="370" height="294" />
+                <img class="cards-set__img" src="./images/boxes.jpg" alt="коробки" width="370" height="294" />
                 <p class="card-overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -187,7 +197,7 @@
             </li>
             <li class="cards-set__items six">
               <div class="cards-set__thumb">
-                <img
+                <img class="cards-set__img" 
                   src="./images/inspiration_has_no_borders.jpg"
                   alt="монітор"
                   width="370"
@@ -206,7 +216,7 @@
             </li>
             <li class="cards-set__items seven">
               <div class="cards-set__thumb">
-                <img src="./images/limited_edition.jpg" alt="книжка" width="370" height="294" />
+                <img class="cards-set__img" src="./images/limited_edition.jpg" alt="книжка" width="370" height="294" />
                 <p class="card-overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -220,7 +230,7 @@
             </li>
             <li class="cards-set__items eight">
               <div class="cards-set__thumb">
-                <img src="./images/prodject_lab.jpg" alt="проєкт_лаб" width="370" height="294" />
+                <img class="cards-set__img" src="./images/prodject_lab.jpg" alt="проєкт_лаб" width="370" height="294" />
                 <p class="card-overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -234,7 +244,7 @@
             </li>
             <li class="cards-set__items nine">
               <div class="cards-set__thumb">
-                <img src="./images/growing_business.jpg" alt="ноутбук" width="370" height="294" />
+                <img class="cards-set__img" src="./images/growing_business.jpg" alt="ноутбук" width="370" height="294" />
                 <p class="card-overlay-text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                   це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -250,9 +260,9 @@
         </div>
       </section>
     </main>
-    <footer class="footer footer-container">
-      <div class="container">
-        <div class="about-company">
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="footer-address">
           <a href="WebStudio" lang="en" class="logo__footer">
             <span>Web</span>
             <span class="logo__studio">Studio</span>
@@ -332,5 +342,48 @@
         </div>
       </div>
     </footer>
+     <!--- MOBILE MENU --->
+ <!-- <div class="mobile-menu is-hidden js-menu-container"></div> -->
+ <div class="mobile-menu js-menu-container">
+  <div class="mobile-menu__container">
+      <button class="mobile-menu__close js-close-menu" type="button">
+    <svg class="icon-close" width="40" height="40">
+  <use href="./images/icons.svg#icon-close-black"></use>
+  </svg>
+    </button>
+    <nav class="mobile-nav">
+      <ul class="mobile-nav__list">
+        <li><a href="./index.html" class="mobile-nav__link link current">Студія</a></li>
+        <li><a href="./portfolio.html" class="mobile-nav__link link">Портфоліо</a></li>
+        <li><a href="" class="mobile-nav__link link">Контакти</a></li>
+      </ul>
+    </nav>
+        <ul class="mobile-contact__list">
+        <li class="mobile-contact__item">
+          <a href="tel:+38 096 111 11 11" class="mobile-contact__link link">+38 096 111 11 11</a>
+        </li>
+        <li class="mobile-contact__item">
+          <a href="mailto:info@devstudio.com" class="mobile-contact__mail link">info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="mobile-social__list">
+        <li class="mobile-social__item">
+          <a href="" class="mobile-social__link link">Instagram</a>
+        </li>
+
+        <li class="mobile-social__item">
+          <a href="" class="mobile-social__link link">Twitter</a>
+        </li>
+
+        <li class="mobile-social__item">
+          <a href="" class="mobile-social__link link">Facebook</a>
+        </li>
+
+         <li class="mobile-social__item">
+          <a href="" class="mobile-social__link link">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+</div>
   </body>
 </html>

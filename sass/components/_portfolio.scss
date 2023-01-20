@@ -5,13 +5,35 @@
   padding-bottom: 94px;
 }
 
-.button__list {
-  @include flex-justify;
-  flex-wrap: nowrap;
+.portfolio__container {
+  // max-width: 350px;
+  
+  @media screen and (min-width: 768px) {
+      min-width: 768px;
+  }
+  
+  @media screen and (min-width: 1200px) {
+      min-width: 1200px;
+  }
+}
 
-  margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
+.button__list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  column-gap: 8px;
+  margin-bottom: 40px;
+   
+  @media screen and (min-width: 768px) {
+    flex-wrap: nowrap;
+    justify-content: center;
+  
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+ 
 }
 
 .button__items {
@@ -28,12 +50,10 @@
   border-color: transparent;
 
   cursor: pointer;
-  margin-right: 8px;
+  gap: 8px;
   transition: background-color var(--animate), color var(--animate), box-shadow var(--animate);
 
-  &:not(:last-child) {
-    margin-right: 8px;
-  }
+  
 }
 
 .button__items:hover,
@@ -55,19 +75,42 @@
   margin: 0;
   list-style: none;
   margin: auto;
+  gap: 30px;
+
+  @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 60px) / 2);
+  }
 }
 
 .cards-set__items {
   overflow: hidden;
   width: 370px;
-  margin-top: 30px;
-  margin-left: 30px;
+  // margin-top: 30px;
+  // margin-left: 30px;
 
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 
   transition: background-color var(--animate), border var(--animate), box-shadow var(--animate);
+
+  // display: flex;
+  // flex-wrap: wrap;
+ 
+  width: 100%;
+  background-color: var(--primary-bcg-color);
+  
+  @media screen and (min-width: 480px) {
+      max-width: 450px;   
+  }
+
+  @media screen and (min-width: 768px) {
+      max-width: 354px;    
+  }
+
+  @media screen and (min-width: 1200px) {
+      max-width: 370px;
+  }
 
   &:hover,
   &:focus {
@@ -87,23 +130,16 @@
   }
 }
 
-.cards-set > .two,
-.cards-set > .three {
-  margin-left: 30px;
-  margin-top: 0;
-}
+.cards-set__img {
+  width: 450px;
+  height: auto;
 
-.cards-set > .one {
-  margin-left: 0;
-  margin-top: 0;
-}
-
-.cards-set > .four {
-  margin-left: 0;
-}
-
-.cards-set > .seven {
-  margin-left: 0;
+  @media screen and (min-width: 768px) {
+  width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
 }
 
 .cards-set__subtitle {

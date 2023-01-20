@@ -4,64 +4,68 @@ width: 100%;
   background: #2f303a;
   text-align: center;
 
-  @media screen and (min-width: 768px) and (max-width: 1199px) {
-    // display: flex;
-    // flex-wrap: wrap;
-    // align-items: flex-start;  
-    // justify-content: baseline;
-    
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+
+  
+  @media screen and (min-width: 1200px) {
+          flex-wrap: nowrap;
+          max-width: 1600px;
+      }
+
+}
+
+  .footer-container {
+margin-left: auto;
+margin-right: auto;
+
+padding-left: 15px;
+padding-right: 15px;
+padding-top: 60px;
+padding-bottom: 60px;
+
+@media screen and (min-width: 768px) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+   }
+
+   @media screen and (min-width: 1200px){
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+   } 
+    }
+
+    .footer-address {
+ 
+       margin-bottom: 60px;
+      @media screen and (min-width: 768px) and (max-width: 1199px)  {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        width: 232px;
+        margin-left: 76px;
+      }
 
   @media screen and (min-width: 1200px) {
-    max-width: 1600px;
-  }
-
-  & > .container {
-    margin-left: auto;
-    margin-right: auto;
-
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-
-    @media screen and (min-width: 768px) {
+margin-right: 94px;
+margin-bottom: 0px;
  
-    }
-  
-    @media screen and (min-width: 1200px) {
-      display: flex;
-      align-items: baseline;
       }
-    }
-}
-
-.footer-container {
-  margin-left: auto;
-  margin-right: auto;
-          
- 
-}
-
+  }
 .about-company {
-  outline: 1px solid orange;
-  margin-bottom: 60px;
-
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    width: 232px;
-    height: auto;
-  margin-left: 76px;
-  margin-bottom: 60px;
-  // display: flex;
-  // flex-wrap: wrap;
-  // align-items: center;  
-  // justify-content: center;
   display: inline-block;
+  margin-top: 28px;
   }
  
   @media screen and (min-width: 1200px) {
     margin-top: 20px;
-    margin-right: 70px;
   }
 }
 
@@ -72,9 +76,7 @@ width: 100%;
   font-style: normal;
   @include font(700, 24px, 1.17, 0.03em);
       text-align: center;
-      margin-bottom: 28px;
-
-  color: var(--hover-color);
+   color: var(--hover-color);
 
   @media screen and (min-width: 1200px) {
     @include font(700, 26px, 1.19, 0.03em);
@@ -93,7 +95,6 @@ width: 100%;
 
 .about-company__address {
   display: block;
-  // margin-top: 28px;
 
   font-family: 'Roboto';
   font-style: normal;
@@ -154,13 +155,17 @@ text-align: center;
 
 /* --- FOOTER soc-link --- */
 .about-company__soc {
+  margin-bottom: 60px;
   
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    display: inline-block;
-    // margin-right: 89px;
-    margin-left: 165px;
-      // width: 206px;
-  
+  flex-wrap: wrap;
+  margin-left: 165px;
+   width: 206px;
+      }
+ 
+        @media screen and (min-width: 1200px) {
+          flex-wrap: wrap;
+          margin-bottom: 0px;
     }
 }
 
@@ -203,11 +208,7 @@ text-align: center;
 /* --- Підпишіться на розсилку v FOOTER --- */
 
 .about-company__subscribe {
-  outline: 1px solid red; 
-
-  margin-top: 60px;
-
-  font-weight: 700;
+font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
 text-align: center;
@@ -225,11 +226,8 @@ display: inline-block;
   }
 
 .about-company__subscribe-form {
-
-
   @media screen and (min-width: 1200px) {
     @include flex-align-justify;
-
     margin: 0;
     padding: 0;
   }

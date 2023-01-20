@@ -1,4 +1,3 @@
-
 .mobile-menu {
   position: fixed;
   top: 0px;
@@ -58,12 +57,11 @@
  }
 
 .icon-close {
-  width: 100%;
+   width: 100%;
    background-repeat: no-repeat;
    background-size: cover;
    background-position: center;
   }
-
 
 .mobile-nav__link {
   display: inline-block;
@@ -133,16 +131,20 @@
 
 .mobile-social__list {
   display: flex;
-justify-content: space-between;
  }
 
- .mobile-social__item.svg {
-  margin-right: 10px;
+.mobile-social__item:not(:last-child)::after {
+  content: "";
+  height: 100%;
+  width: 0px;
+  border:1px solid rgba(33, 33, 33, 0.2);
   margin-left: 10px;
+  margin-right: 10px;
 
-  border: 1px solid rgba(33, 33, 33, 0.2);
-transform: rotate(90deg);
- }
+  @include mobile{
+      height: 22px;
+  }
+}
 
  .mobile-social__link {
   font-family: 'Roboto';
