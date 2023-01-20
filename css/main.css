@@ -1158,20 +1158,10 @@ image.png.icon-burger .link.current {
   .footer-address {
     margin-right: 94px;
     margin-bottom: 0px;
-  }
-}
-
-.about-company {
-  margin-top: 28px;
-}
-@media screen and (min-width: 768px) and (max-width: 1199px) {
-  .about-company {
-    display: inline-block;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .about-company {
-    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -1199,9 +1189,21 @@ image.png.icon-burger .link.current {
   color: var(--pramyre-text-color);
 }
 
+.about-company {
+  margin-top: 28px;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .about-company__list {
+  .about-company {
     display: inline-block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about-company {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
@@ -1227,7 +1229,7 @@ image.png.icon-burger .link.current {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    display: block;
+    display: inline-block;
   }
 }
 
@@ -1255,7 +1257,7 @@ image.png.icon-burger .link.current {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    display: block;
+    display: inline-block;
   }
 }
 
@@ -1281,7 +1283,7 @@ image.png.icon-burger .link.current {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    display: block;
+    display: inline-block;
   }
 }
 
