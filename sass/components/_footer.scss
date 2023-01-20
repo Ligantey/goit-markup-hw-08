@@ -1,5 +1,5 @@
 .footer {
-width: 100%;
+  width: 100%;
 
   background: #2f303a;
   text-align: center;
@@ -9,62 +9,63 @@ width: 100%;
   justify-content: center;
   align-items: baseline;
 
-  
+
   @media screen and (min-width: 1200px) {
-          flex-wrap: nowrap;
-          max-width: 1600px;
-      }
+    flex-wrap: nowrap;
+    max-width: 1600px;
+  }
 
 }
 
-  .footer-container {
-margin-left: auto;
-margin-right: auto;
+.footer-container {
+  margin-left: auto;
+  margin-right: auto;
 
-padding-left: 15px;
-padding-right: 15px;
-padding-top: 60px;
-padding-bottom: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-@media screen and (min-width: 768px) {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-   }
-
-   @media screen and (min-width: 1200px){
-  display: flex;
-  justify-content: center;
-  align-items: baseline;
-   } 
-    }
-
-    .footer-address {
- 
-       margin-bottom: 60px;
-      @media screen and (min-width: 768px) and (max-width: 1199px)  {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-items: center;
-        width: 232px;
-        margin-left: 76px;
-      }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+  }
 
   @media screen and (min-width: 1200px) {
-margin-right: 94px;
-margin-bottom: 0px;
- 
-      }
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
   }
+}
+
+.footer-address {
+
+  margin-bottom: 60px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 232px;
+    margin-left: 76px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 94px;
+    margin-bottom: 0px;
+  }
+}
+
 .about-company {
   margin-top: 28px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-  display: inline-block;
+    display: inline-block;
   }
- 
+
   @media screen and (min-width: 1200px) {
     margin-top: 20px;
   }
@@ -76,8 +77,8 @@ margin-bottom: 0px;
   font-family: 'Raleway';
   font-style: normal;
   @include font(700, 24px, 1.17, 0.03em);
-      text-align: center;
-   color: var(--hover-color);
+  text-align: center;
+  color: var(--hover-color);
 
   @media screen and (min-width: 1200px) {
     @include font(700, 26px, 1.19, 0.03em);
@@ -106,7 +107,7 @@ margin-bottom: 0px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: inline-block;
   }
- 
+
   @media screen and (min-width: 1200px) {
     @include font(400, 14px, 1.71, 0.03em);
     display: block;
@@ -121,10 +122,10 @@ margin-bottom: 0px;
   font-family: 'Roboto';
   font-style: normal;
   @include font(400, 14px, 1.14, 0.03em);
-text-align: center;
+  text-align: center;
 
   color: rgba(255, 255, 255, 0.6);
-  
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: inline-block;
   }
@@ -157,17 +158,17 @@ text-align: center;
 /* --- FOOTER soc-link --- */
 .about-company__soc {
   margin-bottom: 60px;
-  
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-  flex-wrap: wrap;
-  margin-left: 165px;
-   width: 206px;
-      }
- 
-        @media screen and (min-width: 1200px) {
-          flex-wrap: wrap;
-          margin-bottom: 0px;
-    }
+    flex-wrap: wrap;
+    margin-left: 165px;
+    width: 206px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: wrap;
+    margin-bottom: 0px;
+  }
 }
 
 .about-company__items {
@@ -178,7 +179,7 @@ text-align: center;
   @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--pramyre-text-color);
-text-align: center;
+  text-align: center;
 }
 
 .studio-soc__link {
@@ -194,6 +195,7 @@ text-align: center;
 
   background-color: rgba(255, 255, 255, 0.1);
   transition: background-color var(--animate), filter var(--animate), color var(--animate);
+
   &:hover,
   &:focus {
     background-color: var(--hover-color);
@@ -209,22 +211,22 @@ text-align: center;
 /* --- Підпишіться на розсилку v FOOTER --- */
 
 .about-company__subscribe {
-font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-text-align: center;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
-@media screen and (min-width: 768px) {
-display: inline-block;
+  @media screen and (min-width: 768px) {
+    display: inline-block;
 
-}
+  }
 
   @media screen and (min-width: 1200px) {
     margin-left: auto;
   }
-  }
+}
 
 .about-company__subscribe-form {
   @media screen and (min-width: 1200px) {
@@ -239,7 +241,7 @@ display: inline-block;
 .about-company__text-items-subscribe {
   margin-bottom: 20px;
 
-   font-family: 'Roboto';
+  font-family: 'Roboto';
   font-style: normal;
   @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
@@ -250,7 +252,7 @@ display: inline-block;
   display: block;
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-left: 16px; 
+  padding-left: 16px;
 
   width: 450px;
   margin-bottom: 20px;
@@ -258,25 +260,25 @@ display: inline-block;
   margin-right: auto;
 
   border: 1px solid rgba(255, 255, 255, 0.3);
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
-background-color: #2f303a;
-transition: border var(--animate);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  transition: border var(--animate);
 
-font-family: 'Roboto';
-font-style: normal;
-align-items: center;
+  font-family: 'Roboto';
+  font-style: normal;
+  align-items: center;
 
-@include font(400, 16px, 1.25, 0.03em);
-color: rgba(255, 255, 255, 0.6);
+  @include font(400, 16px, 1.25, 0.03em);
+  color: rgba(255, 255, 255, 0.6);
 
-@media screen and (min-width: 768px) {
-  justify-content: center;
-}
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 
   @media screen and (min-width: 1200px) {
     display: block;
-  width: 358px;
+    width: 358px;
   }
 
   &:hover,
@@ -301,7 +303,7 @@ color: rgba(255, 255, 255, 0.6);
 
   @media screen and (min-width: 480px) {
     display: inline-block;
-  
+
     padding-right: 28px;
     padding-left: 31px;
   }
@@ -319,7 +321,7 @@ color: rgba(255, 255, 255, 0.6);
   font-family: 'Roboto';
   font-style: normal;
   align-items: center;
-text-align: center;
+  text-align: center;
   @include font(700, 16px, 1.88, 0.06em);
   color: #ffffff;
 }
@@ -330,7 +332,7 @@ text-align: center;
   fill: #ffffff;
   background-color: #2196f3;
 
-  @media screen and (min-width: 1200px){
+  @media screen and (min-width: 1200px) {
     margin-left: 10px;
   }
 }

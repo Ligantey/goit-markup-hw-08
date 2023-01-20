@@ -7,13 +7,13 @@
 
 .portfolio__container {
   // max-width: 350px;
-  
+
   @media screen and (min-width: 768px) {
-      min-width: 768px;
+    min-width: 768px;
   }
-  
+
   @media screen and (min-width: 1200px) {
-      min-width: 1200px;
+    min-width: 1200px;
   }
 }
 
@@ -24,16 +24,16 @@
   row-gap: 15px;
   column-gap: 8px;
   margin-bottom: 40px;
-   
+
   @media screen and (min-width: 768px) {
     flex-wrap: nowrap;
     justify-content: center;
-  
+
     margin-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
   }
- 
+
 }
 
 .button__items {
@@ -53,7 +53,7 @@
   gap: 8px;
   transition: background-color var(--animate), color var(--animate), box-shadow var(--animate);
 
-  
+
 }
 
 .button__items:hover,
@@ -78,7 +78,7 @@
   gap: 30px;
 
   @media screen and (min-width: 768px) {
-      flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 60px) / 2);
   }
 }
 
@@ -96,20 +96,20 @@
 
   // display: flex;
   // flex-wrap: wrap;
- 
+
   width: 100%;
   background-color: var(--primary-bcg-color);
-  
+
   @media screen and (min-width: 480px) {
-      max-width: 450px;   
+    max-width: 450px;
   }
 
   @media screen and (min-width: 768px) {
-      max-width: 354px;    
+    max-width: 354px;
   }
 
   @media screen and (min-width: 1200px) {
-      max-width: 370px;
+    max-width: 370px;
   }
 
   &:hover,
@@ -125,7 +125,7 @@
   position: relative;
   overflow: hidden;
 
-  & > img {
+  &>img {
     overflow: hidden;
   }
 }
@@ -135,8 +135,9 @@
   height: auto;
 
   @media screen and (min-width: 768px) {
-  width: 354px;
+    width: 354px;
   }
+
   @media screen and (min-width: 1200px) {
     width: 370px;
   }

@@ -48,9 +48,9 @@ header {
 }
 
 .navigation__logo {
-    margin-top: 16px;
-    margin-bottom: 16px;
-  
+  margin-top: 16px;
+  margin-bottom: 16px;
+
   /* --- Цей медіа-запит застосується при ширині в'юпорту більше 768px tablet --- */
   @media screen and (min-width: 768px) {
     margin-top: 26px;
@@ -58,12 +58,12 @@ header {
     margin-right: 88px;
   }
 
-    /* --- Цей медіа-запит застосується при ширині в'юпорту більше 1200px desktop --- */
-    @media screen and (min-width: 1200px) {
-      margin-top: 24px;
-  margin-bottom: 25px;
-  margin-right: 91px;
-    }
+  /* --- Цей медіа-запит застосується при ширині в'юпорту більше 1200px desktop --- */
+  @media screen and (min-width: 1200px) {
+    margin-top: 24px;
+    margin-bottom: 25px;
+    margin-right: 91px;
+  }
 }
 
 .logo__web {
@@ -77,34 +77,34 @@ header {
   margin-bottom: 10px;
   margin-left: auto;
   margin-right: 15px;
-  
- color: #212121;
- border: none;
- background-color: #FFFFFF;
 
- @media screen and (min-width: 768px) {
-  display: none;
-}
+  color: #212121;
+  border: none;
+  background-color: #FFFFFF;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 }
 
 image.png.icon-burger {
-    /* прописуємо у % щоб займало весь контейнер */
-    width: 100%;
-    height: 100%;
-  
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: none;
-    color: #212121; 
-    background-color: #FFFFFF;
-    transition: color var(--animate);
+  /* прописуємо у % щоб займало весь контейнер */
+  width: 100%;
+  height: 100%;
 
-    .link:hover,
-.link:focus,
-.link.current {
-  fill: var(--hover-color);
-}
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  color: #212121;
+  background-color: #FFFFFF;
+  transition: color var(--animate);
+
+  .link:hover,
+  .link:focus,
+  .link.current {
+    fill: var(--hover-color);
+  }
 }
 
 /* --- site-nav --- */
@@ -112,26 +112,26 @@ image.png.icon-burger {
 .site-nav {
   @include flex-align;
 
-    /* --- Цей медіа-запит застосується при ширині в'юпорту більше 400px mobile --- */
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
+  /* --- Цей медіа-запит застосується при ширині в'юпорту більше 400px mobile --- */
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .site-nav a {
   color: var(--accent-color);
 
   font-family: 'Roboto';
-font-style: normal;
+  font-style: normal;
   @include font(500, 14px, 1.14, 0.02em);
- 
+
 }
 
-.site-nav > li {
+.site-nav>li {
   cursor: pointer;
 }
 
-.site-nav > li:not(:last-child) {
+.site-nav>li:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -179,16 +179,17 @@ font-style: normal;
 /* --- AUTH-NAV --- */
 
 .auth-nav {
+
   /* --- Цей медіа-запит застосується при ширині в'юпорту більше 400px mobile --- */
   @media screen and (max-width: 767px) {
     display: none;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-direction: column;
-margin-top: 21px;
-margin-left: auto;
+    margin-top: 21px;
+    margin-left: auto;
 
   }
 
@@ -199,7 +200,7 @@ margin-left: auto;
   }
 }
 
-.auth-nav > li:not(:last-child) {
+.auth-nav>li:not(:last-child) {
   @media screen and (min-width: 768px) {
     margin-bottom: 10px;
   }
@@ -210,20 +211,20 @@ margin-left: auto;
 }
 
 .auth-nav__item {
-font-family: 'Roboto';
-font-style: normal;
-color: var(--title-text-color);
+  font-family: 'Roboto';
+  font-style: normal;
+  color: var(--title-text-color);
 
-@media screen and (min-width: 768px) {
-  @include font(500, 12px, 1.17, 0.02em); 
-}
+  @media screen and (min-width: 768px) {
+    @include font(500, 12px, 1.17, 0.02em);
+  }
 
   @media screen and (min-width: 1200px) {
     @include flex-justify;
-  align-items: baseline;
+    align-items: baseline;
 
-  @include font(500, 14px, 1.14, 0.02em); 
-  } 
+    @include font(500, 14px, 1.14, 0.02em);
+  }
 
 }
 
@@ -263,7 +264,7 @@ color: var(--title-text-color);
   @media screen and (min-width: 768px) {
     margin-right: 8px;
   }
-  
+
   @media screen and (min-width: 1200px) {
     margin-right: 10px;
   }

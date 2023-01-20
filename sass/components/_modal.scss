@@ -129,7 +129,7 @@
   border: 1px solid #2196f3;
   border-radius: 4px;
 
-  & + svg {
+  &+svg {
     outline: transparent;
     fill: var(--hover-color);
   }
@@ -224,7 +224,7 @@ label.modal-politic-label {
   }
 }
 
-.modal-politic-check:checked + .modal-politic-label > span {
+.modal-politic-check:checked+.modal-politic-label>span {
   border: none;
   background-color: var(--hover-color);
   fill: var(--pramyre-text-color);
