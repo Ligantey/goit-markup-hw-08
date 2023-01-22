@@ -1105,6 +1105,7 @@ image.png.icon-burger .link.current {
 
 .clients {
   width: 100%;
+  height: auto;
 }
 
 .clients__section {
@@ -1235,6 +1236,7 @@ image.png.icon-burger .link.current {
     display: flex;
     flex-wrap: nowrap;
     align-items: baseline;
+    justify-content: center;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -1530,7 +1532,7 @@ image.png.icon-burger .link.current {
     width: 450px;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .about-company__email-user {
     width: 354px;
   }
