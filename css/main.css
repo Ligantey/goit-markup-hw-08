@@ -1105,6 +1105,8 @@ image.png.icon-burger .link.current {
 }
 
 .clients {
+  display: inline-block;
+  margin-top: 0px;
   width: 100%;
   height: auto;
 }
@@ -1764,13 +1766,11 @@ image.png.icon-burger .link.current {
     width: 370px;
   }
 }
-@media screen and (min-width: 768px) {
-  .cards-set__thumb {
-    flex-grow: 1;
-  }
-}
 .cards-set__thumb > img {
   overflow: hidden;
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .cards-set__img {
@@ -1789,6 +1789,8 @@ image.png.icon-burger .link.current {
 }
 
 .cards-set__name {
+  flex-grow: 1;
+  width: 450px;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -1797,15 +1799,15 @@ image.png.icon-burger .link.current {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .cards-set__name {
-    flex-grow: 1;
+    width: 354px;
+    height: 146px;
   }
 }
-
-@media screen and (min-width: 768px) {
-  .cards-set__name:first-child {
-    padding-bottom: 56px;
+@media screen and (min-width: 1200px) {
+  .cards-set__name {
+    width: 370px;
   }
 }
 
