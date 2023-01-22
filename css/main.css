@@ -717,9 +717,6 @@ image.png.icon-burger .link.current {
 }
 
 .button__name {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 24px;
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
@@ -733,6 +730,7 @@ image.png.icon-burger .link.current {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 24px;
+    padding-right: 24px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -744,6 +742,7 @@ image.png.icon-burger .link.current {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 32px;
+    padding-right: 32px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -980,6 +979,7 @@ image.png.icon-burger .link.current {
 .team__card {
   width: 450px;
   height: auto;
+  padding-bottom: 24px;
   background-color: var(--pramyre-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -994,6 +994,7 @@ image.png.icon-burger .link.current {
   .team__card {
     width: 270px;
     height: auto;
+    margin-bottom: 30px;
   }
 }
 

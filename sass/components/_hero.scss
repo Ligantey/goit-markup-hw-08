@@ -97,11 +97,7 @@
 }
 
 .button__name {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 24px;
-
-  font-family: 'Roboto';
+   font-family: 'Roboto';
   font-style: normal;
   @include font(700, 16px, 1.88, 0.06em);
   color: #FFFFFF;
@@ -110,6 +106,7 @@
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 24px;
+    padding-right: 24px;
 
     @include font(700, 16px, 1.88, 0.06em);
   }
@@ -117,8 +114,9 @@
   @media screen and (min-width: 1200px) {
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 32px;
-
+ 
+   padding-left: 32px;
+   padding-right: 32px;
     @include font(700, 16px, 1.88, 0.06em);
 
   }
