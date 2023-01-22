@@ -1,81 +1,6 @@
-// .hero {
-//   width: 100%;
-//   padding-left: 60px;
-//     padding-right: 60px;
-// padding-top: 118px;
-// padding-bottom: 118px;
-
-// background-repeat: no-repeat;
-// background-size: cover;
-// background-position: center;
-// box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-// background-color: #2f303a;
-
-// background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-// url('../../images/Header_img_tel_1x.jpg');
-
-// @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-//   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-//   url('../../images/Header_img_tel_2x.jpg');
-//   }
-
-//     @media screen and (min-width: 768px) {
-//     padding-left: 204px;
-//     padding-right: 204px;
-// padding-top: 118px;
-// padding-bottom: 118px;
-// }
-
-//   @media screen and (min-width: 1200px) {
-//      padding-top: 200px;
-//         padding-bottom: 200px;
-//         padding-left: 15px;
-//         padding-right: 15px;
-
-//         max-width: 1600px;
-//         max-height: 600px;
-//   }
-
-// //   @media screen and (min-width: 768px) {
-// //     padding-left: 204px;
-// //     padding-right: 204px;
-// // padding-top: 118px;
-// // padding-bottom: 118px;
-
-// //     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-// //     url('../../images/Header\ _img_tab_1x.jpg');
-
-// //     @media (min-device-pixel-ratio: 2), (min-resoluion: 192dpi), (min-resolution: 2dppx) {
-// //       background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-// //       url('../../images/Header\ _img_tab_2x.jpg');
-// //     }
-// //   }
-
-// //   @media screen and (min-width: 1200px) {
-// //     padding-top: 200px;
-// //     padding-bottom: 200px;
-// //     padding-left: 15px;
-// //     padding-right: 15px;
-
-// //     max-width: 1600px;
-// //     max-height: 600px;
-
-// //   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-// //   url('../../images/backgraund.jpg');
-
-// //   @media (min-device-pixel-ratio: 2), (min-resoluion: 192dpi), (min-resolution: 2dppx) {
-// //     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-// //     url('../../images/header_img_desk_2x.jpg');
-// //   }
-// // }
-
-// }
-
-
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  // background: var(--accent-bcg-color);
   margin-left: auto;
   margin-right: auto;
 
@@ -107,36 +32,34 @@
   background-size: cover;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/Header_img_tel_1x.jpg');
+    url('../images/hero-tel.jpg');
 
   @include retina {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/Header_img_tel_2x.jpg');
+      url('../images/hero-tel-2x.jpg');
   }
 
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/Header_img_tab_1x.jpg');
+      url('../images/hero-tablet.jpg');
 
     @include retina {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/Header_img_tab_2x.jpg');
+        url('../images/hero-tablet-2x.jpg');
     }
   }
 
   @media screen and (min-width: 1200px) {
     max-width: 1600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../images/backgraund.jpg');
+      url('../images/hero-desktop.jpg');
 
     @include retina {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/header_img_desk_2x.jpg');
+        url('../images/hero-desktop-2x.jpg');
     }
   }
-
 }
-
 
 .hero__title {
   width: 360px;

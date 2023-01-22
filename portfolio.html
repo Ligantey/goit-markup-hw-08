@@ -38,9 +38,9 @@
           </svg>
         </button>
         <ul class="site-nav">
-          <li><a href="./index.html" class="site-nav__item link">Студія</a></li>
-          <li><a href="Портфоліо" class="site-nav__item link current">Портфоліо</a></li>
-          <li><a href="Контакти" class="site-nav__item link">Контакти</a></li>
+          <li class="site-nav__list"><a href="./index.html" class="site-nav__item link">Студія</a></li>
+          <li class="site-nav__list"><a href="Портфоліо" class="site-nav__item link current">Портфоліо</a></li>
+          <li class="site-nav__list"><a href="Контакти" class="site-nav__item link">Контакти</a></li>
         </ul>
         <ul class="auth-nav">
           <li class="auth-nav__item">
@@ -52,7 +52,7 @@
             </a>
           </li>
           <li class="auth-nav__item">
-            <a href="tel:+380961111111" class="phone auth-nav__phone">
+            <a href="tel:+380961111111" class="phone auth-nav__phone link">
               <svg class="auth-nav__smartphone" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -67,38 +67,40 @@
     <section class="portfolio">
       <div class="container portfolio__container">
         <h1 class="visually-hidden"></h1>
-        <ul class="button__list">
-          <li>
+        <div class="button__nav">
+         <ul class="button__list">
+          <li class="button__portfolio">
             <button type="button" class="button__items" name="button" style="width: 73px; height: 38px">
               Усі
             </button>
           </li>
-          <li>
+          <li class="button__portfolio">
             <button type="button" class="button__items" name="button" style="width: 125px; height: 38px">
               Веб-сайти
             </button>
           </li>
-          <li>
+          <li class="button__portfolio">
             <button type="button" class="button__items" name="button" style="width: 112px; height: 38px">
               Додатки
             </button>
           </li>
-          <li>
+          <li class="button__portfolio">
             <button type="button" class="button__items" name="button" style="width: 103px; height: 38px">
               Дизайн
             </button>
           </li>
-          <li>
+          <li class="button__portfolio">
             <button type="button" class="button__items" name="button" style="width: 130px; height: 38px">
               Маркетинг
             </button>
           </li>
         </ul>
+      </div>
         <h2></h2>
         <ul class="cards-set">
-          <li class="cards-set__items one">
+          <li class="cards-set__items">
             <div class="cards-set__thumb">
-              <img class="cards-set__img" src="./images/tehnokryak.jpg" alt="люди" width="370" height="294" />
+              <img class="cards-set__img" src="./images/tehnokryak.jpg" alt="люди"/>
               <p class="card-overlay-text">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -110,7 +112,7 @@
               <p class="cards-set__text">Веб-сайт</p>
             </div>
           </li>
-          <li class="cards-set__items two">
+          <li class="cards-set__items">
             <div class="cards-set__thumb">
               <img class="cards-set__img" src="./images/new-orlean-vs.jpg" alt="баскетбол" width="370" height="294" />
               <p class="card-overlay-text">
@@ -124,9 +126,9 @@
               <p class="cards-set__text">Дизайн</p>
             </div>
           </li>
-          <li class="cards-set__items three">
+          <li class="cards-set__items">
             <div class="cards-set__thumb">
-              <img class="cards-set__img" src="./images/seafood.jpg" alt="ресторан" width="370" height="294" />
+              <img class="cards-set__img" src="./images/seafood.jpg" alt="ресторан"/>
               <p class="card-overlay-text">
                 Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все
                 це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну
@@ -138,7 +140,7 @@
               <p class="cards-set__text">Додаток</p>
             </div>
           </li>
-          <li class="cards-set__items four">
+          <li class="cards-set__items">
             <div class="cards-set__thumb">
               <img class="cards-set__img" src="./images/prime_marketing.jpg" alt="навушники" width="370" height="294" />
               <p class="card-overlay-text">
@@ -152,7 +154,7 @@
               <p class="cards-set__text">Маркетинг</p>
             </div>
           </li>
-          <li class="cards-set__items five">
+          <li class="cards-set__items">
             <div class="cards-set__thumb">
               <img class="cards-set__img" src="./images/boxes.jpg" alt="коробки" width="370" height="294" />
               <p class="card-overlay-text">
@@ -166,7 +168,7 @@
               <p class="cards-set__text">Додаток</p>
             </div>
           </li>
-          <li class="cards-set__items six">
+          <li class="cards-set__items">
             <div class="cards-set__thumb">
               <img class="cards-set__img" src="./images/inspiration_has_no_borders.jpg" alt="монітор" width="370"
                 height="294" />
@@ -181,7 +183,7 @@
               <p class="cards-set__text">Веб-сайт</p>
             </div>
           </li>
-          <li class="cards-set__items seven">
+          <li class="cards-set__items">
             <div class="cards-set__thumb">
               <img class="cards-set__img" src="./images/limited_edition.jpg" alt="книжка" width="370" height="294" />
               <p class="card-overlay-text">
@@ -195,7 +197,7 @@
               <p class="cards-set__text">Дизайн</p>
             </div>
           </li>
-          <li class="cards-set__items eight">
+          <li class="cards-set__items">
             <div class="cards-set__thumb">
               <img class="cards-set__img" src="./images/prodject_lab.jpg" alt="проєкт_лаб" width="370" height="294" />
               <p class="card-overlay-text">
@@ -209,7 +211,7 @@
               <p class="cards-set__text">Маркетинг</p>
             </div>
           </li>
-          <li class="cards-set__items nine">
+          <li class="cards-set__items">
             <div class="cards-set__thumb">
               <img class="cards-set__img" src="./images/growing_business.jpg" alt="ноутбук" width="370" height="294" />
               <p class="card-overlay-text">
@@ -234,21 +236,20 @@
           <span>Web</span>
           <span class="logo__studio">Studio</span>
         </a>
-        <ul class="about-company">
-          <li>
-            <address class="about-company__address">м. Київ, пр-т Лесі Українки, 26</address>
-          </li>
-          <li>
-            <address>
-              <a class="about-company__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
-            </address>
-          </li>
-          <li>
-            <address>
-              <a class="about-company__phone" href="tel:+380961111111">+38 096 111 11 11</a>
-            </address>
-          </li>
-        </ul>
+        <address>
+          <ul class="about-company">
+            <li class="about-company__list">
+              <a href="https://goo.gl/maps/hWU4PpXSDXNLeG189" class="about-company__address">м. Київ, пр-т Лесі
+                Українки, 26</a>
+            </li>
+            <li class="about-company__list">
+              <a href="mailto:info@devstudio.com" class="about-company__mail">info@devstudio.com</a>
+            </li>
+            <li class="about-company__list">
+              <a href="tel:+380961111111" class="about-company__phone">+38 096 111 11 11</a>
+            </li>
+          </ul>
+        </address>
       </div>
       <div class="about-company__soc">
         <p class="about-company__items">приєднуйтесь</p>
@@ -288,9 +289,8 @@
         <p class="about-company__text-items-subscribe">Підпишіться на розсилку</p>
         <form>
           <div class="about-company__subscribe-form">
-            <label>
-              <input type="email" class="about-company__email-user" name="email" placeholder="E-mail" />
-            </label>
+            <label lass="about-company__email-border">
+              <input type="email" class="about-company__email-user" name="email" placeholder="E-mail"/> </label>
             <button type="submit" class="about-company__submit-items">
               <span class="about-company__submit-text">Підписатися</span>
               <svg class="about-company__icon-submit" width="24" height="24">

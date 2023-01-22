@@ -20,14 +20,20 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   padding: 40px;
 
   background-color: var(--pramyre-text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 
 .modal-close {
@@ -65,20 +71,51 @@
 
 .modal-heading {
   margin-bottom: 12px;
-
-  width: 448px;
+  width: 370px;
 
   font-family: 'Roboto';
   font-style: normal;
+  text-align: center;
   @include font(700, 20px, 1.15, 0.03em);
   text-align: center;
   color: #212121;
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
 }
 
 /* -------ОФОРИЛЕННЯ ВСЬОГО ЩО Є В МОДАЛЬНОМУ ВІКНІ-------------------*/
 .inputs {
-  width: 448px;
-  margin-bottom: 20px;
+  display: inline-block;
+  position: relative;
+  width: 370px;
+
+  @media screen and (min-width: 1200px) {
+    width: 448px;
+  }
+}
+
+.modal-input-group {
+  position: relative;
+  width: 370px;
+  height: 116px;
+
+  @include desktop {
+    width: 448px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  &:not(:last-child) {
+    height: 58px;
+  }
+
+  &:last-child {
+    height: 138px;
+  }
 }
 
 .modal-input-items {
@@ -86,6 +123,13 @@
   font-style: normal;
   @include font(400, 12px, 1.17, 0.01em);
   color: #757575;
+
+  display: block;
+
+  &::placeholder {
+    @include font(400, 12, 1.17, 0.01);
+    color: var(--hover-color);
+  }
 }
 
 .modal-input-wrapper {
@@ -101,10 +145,9 @@
   position: absolute;
 
   top: 50%;
-  left: 0;
+  left: 12px;
   transform: translateY(-50%);
 
-  margin-left: 12px;
   margin-right: 12px;
 
   color: #212121;
@@ -116,7 +159,7 @@
   width: 100%;
   height: 40px;
 
-  padding-left: 42px;
+  // padding-left: 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -164,13 +207,33 @@
   border-radius: 4px;
   font-family: 'Roboto';
   font-style: normal;
-  @include font(400, 12px, 1.17, 0.01em);
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
   transition: border var(--animate), color var(--animate);
+
+  resize: none;
+  outline: none;
+
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.01em;
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include font(400, 12px, 1.17, 0.01em);
+  }
 
   &:hover,
   &:focus {
@@ -191,19 +254,30 @@
 /* --- РАДІОКНОПКА В МОДАЛЬНОМУ ВІКНІ --- */
 
 .agree {
-  @include flex-align;
-  margin-left: auto;
-  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   margin-top: 20px;
   margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
 
-  width: 425px;
+  width: 370px;
+  height: 15px;
 
   font-family: 'Roboto';
   font-style: normal;
-  @include font(400, 14px, 1.71, 0.03em);
+  @include font(400, 12px, 1.17, 0.03em);
   color: var(--title-text-color);
   border: none;
+
+  @media screen and (min-width: 1200px) {
+    width: 425px;
+    height: 24px;
+    @include font(400, 14px, 1.71, 0.03em);
+  }
+
 }
 
 label.modal-politic-label {
@@ -245,50 +319,34 @@ label.modal-politic-label {
 /* --- КНОПКА МОДАЛЬНОГО ВІКНА - "ВІДПРАВИТИ" --- */
 
 .button-submit {
-  @include flex-align;
-  text-align: center;
+  display: block;
   width: 200px;
   height: 50px;
 
   padding-top: 10px;
-  padding-right: 52px;
   padding-bottom: 10px;
-  padding-left: 52px;
 
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 30px;
+
+  margin: 0px auto;
+
 
   font-family: 'Roboto';
   font-style: normal;
+  text-align: center;
   @include font(700, 16px, 1.88, 0.06em);
-
+  cursor: pointer;
   color: var(--pramyre-text-color);
   background-color: var(--hover-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  border: 0;
-  transition: filter var(--animate), background-color var(--animate), box-shadow var(--animate);
+  border: none;
+  transition: color var(--animate), background-color var(--animate), box-shadow var(--animate);
 
   &:hover,
   &:focus {
-    background: #188ce8;
+    background-color: #188ce8;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
-}
-
-.button-submit-name {
-  @include flex-align;
-  cursor: pointer;
-
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  @include font(700, 16px, 1.88, 0.06em);
-  text-align: center;
-  color: var(--pramyre-text-color);
 }

@@ -1,12 +1,28 @@
 /* --- КНОПКИ В ПОРТФОЛІО --- */
-
 .portfolio {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .portfolio__container {
-  // max-width: 350px;
+  min-width: 350px;
+
+  @media screen and (min-width: 768px) {
+    min-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    min-width: 1200px;
+  }
+}
+
+.button__nav {
+  width: 100%;
 
   @media screen and (min-width: 768px) {
     min-width: 768px;
@@ -21,6 +37,8 @@
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
+  align-items: baseline;
+
   row-gap: 15px;
   column-gap: 8px;
   margin-bottom: 40px;
@@ -29,15 +47,27 @@
     flex-wrap: nowrap;
     justify-content: center;
 
-    margin-bottom: 50px;
+    margin-bottom: 30px;
     margin-left: auto;
     margin-right: auto;
   }
 
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.button__portfolio {
+  gap: 8px;
 }
 
 .button__items {
   height: 26px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+
   font-family: 'Roboto';
   font-style: normal;
   @include font(500, 16px, 1.63, 0.03em);
@@ -50,10 +80,7 @@
   border-color: transparent;
 
   cursor: pointer;
-  gap: 8px;
   transition: background-color var(--animate), color var(--animate), box-shadow var(--animate);
-
-
 }
 
 .button__items:hover,
@@ -71,59 +98,73 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  padding: 0;
+  padding-right: 15px;
   margin: 0;
   list-style: none;
   margin: auto;
   gap: 30px;
 
+  width: 320px;
+
+  @media screen and (max-width: 767px) {
+    width: 450px;
+  }
+
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 60px) / 2);
+    width: 768px;
+    flex-basis: calc((100% - 30px) / 2);
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    gap: 30px;
+    flex-basis: calc((100% - 60px) / 3);
   }
 }
 
 .cards-set__items {
+  width: 450px;
   overflow: hidden;
-  width: 370px;
-  // margin-top: 30px;
-  // margin-left: 30px;
+  background-color: #FFFFFF;
 
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-
-  transition: background-color var(--animate), border var(--animate), box-shadow var(--animate);
-
-  // display: flex;
-  // flex-wrap: wrap;
-
-  width: 100%;
-  background-color: var(--primary-bcg-color);
-
-  @media screen and (min-width: 480px) {
-    max-width: 450px;
-  }
+  transition: box-shadow var(--animate);
 
   @media screen and (min-width: 768px) {
-    max-width: 354px;
+    width: 354px;
   }
 
   @media screen and (min-width: 1200px) {
-    max-width: 370px;
+    width: 370px;
   }
 
   &:hover,
   &:focus {
-    background-color: var(--pramyre-text-color);
-    border: 1px solid #eeeeee;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
+    // border-left: 1px solid #eeeeee;
+    // border-right: 1px solid #eeeeee;
+    // border-bottom: 1px solid #eeeeee;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
   }
 }
 
 .cards-set__thumb {
   position: relative;
   overflow: hidden;
+
+  width: 450px;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 370px;
+  }
+
+  @include tablet {
+    flex-grow: 1;
+  }
 
   &>img {
     overflow: hidden;
@@ -134,6 +175,7 @@
   width: 450px;
   height: auto;
 
+
   @media screen and (min-width: 768px) {
     width: 354px;
   }
@@ -143,39 +185,80 @@
   }
 }
 
+// .card-overlay-text {
+//   padding-top: 77px;
+//   padding-right: 24px;
+//   padding-bottom: 77px;
+//   padding-left: 24px;
+
+//   font-family: 'Roboto';
+// font-style: normal;
+// font-weight: 400;
+// font-size: 18px;
+// line-height: 1.56;
+// letter-spacing: 0.03em;
+// color: #FFFFFF;
+
+//   @media screen and (min-width: 768px) {
+//  padding-top: 49px;
+//   padding-right: 24px;
+//   padding-bottom: 77px;
+//   padding-left: 24px;
+//   }
+
+//   @media screen and (min-width: 1200px) {
+//     padding-top: 63px;
+//     padding-right: 24px;
+//     padding-bottom: 63px;
+//     padding-left: 24px;
+//   }
+// }
+
+.cards-set__name {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+
+  @media screen and (min-width: 768px) {
+    flex-grow: 1;
+}
+}
+
+
+.cards-set__name:first-child {
+  @media screen and (min-width: 768px) {
+    padding-bottom: 56px;
+  }
+}
+
 .cards-set__subtitle {
-  margin-top: 20px;
-  margin-right: 24px;
   margin-bottom: 4px;
-  margin-left: 24px;
 
   @include font(700, 18px, 2, 0.06em);
   color: var(--accent-color);
 }
 
 .cards-set__text {
-  margin-right: 24px;
-  margin-bottom: 20px;
-  margin-left: 24px;
-
-  @include font(null, 16px, 1.88, 0.03em);
+  @include font(400, 16px, 1.88, 0.03em);
   color: var(--title-text-color);
 }
 
-
 /* --- ПОРТФОЛІО ВИПАДАЮЧЕ ВІКНО --- */
-
 .card-overlay-text {
   position: absolute;
-
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 
-  padding-top: 63px;
+  padding-top: 77px;
   padding-right: 24px;
-  padding-bottom: 63px;
+  padding-bottom: 77px;
   padding-left: 24px;
 
   font-family: 'Roboto';
@@ -188,6 +271,20 @@
   transform: translateY(101%);
   opacity: 1;
   transition: transform 250ms var(--animate);
+
+  @media screen and (min-width: 768px) {
+    padding-top: 49px;
+    padding-right: 24px;
+    padding-bottom: 77px;
+    padding-left: 24px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 63px;
+    padding-right: 24px;
+    padding-bottom: 63px;
+    padding-left: 24px;
+  }
 }
 
 .cards-set__items:hover .card-overlay-text,
